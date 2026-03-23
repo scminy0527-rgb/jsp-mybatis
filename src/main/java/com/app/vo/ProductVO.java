@@ -4,53 +4,53 @@ import java.util.Objects;
 
 public class ProductVO {
 	private Long id;
-	private String name;
-	private int price;
-	private int stock;
-	
+	private String productName;
+	private int productPrice;
+	private int productStock;
+
 	public ProductVO() {;}
-	public ProductVO(Long id, String name, int price, int stock) {
+	public ProductVO(Long id, String productName, int productPrice, int productStock) {
 		this.id = id;
-		this.name = name;
-		this.price = price;
-		this.stock = stock;
+		this.productName = productName;
+		this.productPrice = productPrice;
+		this.productStock = productStock;
 	}
-	
+
 //	오버로딩 (DB에 삽입 용, id 는 시퀀스로 처리)
-	public ProductVO(String name, int price, int stock) {
-		this.name = name;
-		this.price = price;
-		this.stock = stock;
+	public ProductVO(String productName, int productPrice, int productStock) {
+		this.productName = productName;
+		this.productPrice = productPrice;
+		this.productStock = productStock;
 	}
-	
+
 	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getProductName() {
+		return productName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
-	public int getPrice() {
-		return price;
+	public int getProductPrice() {
+		return productPrice;
 	}
-	public void setPrice(int price) {
-		this.price = price;
+	public void setProductPrice(int productPrice) {
+		this.productPrice = productPrice;
 	}
-	public int getStock() {
-		return stock;
+	public int getProductStock() {
+		return productStock;
 	}
-	public void setStock(int stock) {
-		this.stock = stock;
+	public void setProductStock(int productStock) {
+		this.productStock = productStock;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "ProductVO [id=" + id + ", name=" + name + ", price=" + price + ", stock=" + stock + "]";
+		return "ProductVO [id=" + id + ", productName=" + productName + ", productPrice=" + productPrice + ", productStock=" + productStock + "]";
 	}
 	@Override
 	public int hashCode() {
