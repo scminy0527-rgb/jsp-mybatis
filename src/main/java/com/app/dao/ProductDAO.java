@@ -10,7 +10,7 @@ import com.app.vo.ProductVO;
 public class ProductDAO {
 //	세션 공장: sessionfactory (sql session 만듬)
 	
-	public SqlSession sqlSession;
+	private SqlSession sqlSession;
 	
 	public ProductDAO() {
 		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
@@ -44,3 +44,18 @@ public class ProductDAO {
 		sqlSession.delete("product.delete", id);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
